@@ -13,7 +13,7 @@ public class Minecraft extends CustomAssembly{
 
     @Override
     public String getName(){
-        return "Minecraft Assembly Language (MineASM)";
+        return "Minecraft";
     }
 
     @Override
