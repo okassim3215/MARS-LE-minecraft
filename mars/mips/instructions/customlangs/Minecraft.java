@@ -22,10 +22,6 @@ public class Minecraft extends CustomAssembly {
     @Override
     protected void populate() {
 
-        // -----------------------------------------------------
-        // BASIC INSTRUCTIONS
-        // -----------------------------------------------------
-
         // craft (add)
         instructionList.add(
                 new BasicInstruction("craft $rd,$rs,$rt",
@@ -180,10 +176,6 @@ public class Minecraft extends CustomAssembly {
                             }
                         })
         );
-
-        // -----------------------------------------------------
-        // UNIQUE MINECRAFT INSTRUCTIONS
-        // -----------------------------------------------------
 
         // potion strength
         instructionList.add(
