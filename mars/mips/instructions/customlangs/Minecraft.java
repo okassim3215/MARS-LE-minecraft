@@ -347,5 +347,17 @@ public class Minecraft extends CustomAssembly{
                     }
                 }
         ));
+
+        // reset.world (Custom Reset) - R-Format, Funct 55
+        instructionList.add(new BasicInstruction("reset.world",
+                "Reset: Resets the summon counter.",
+                BasicInstructionFormat.R_FORMAT,
+                "000000 00000 00000 00000 00000 110111",
+                new SimulationCode() {
+                    public void simulate(ProgramStatement statement) throws ProcessingException {
+                        summonCount = 0;
+                    }
+                }
+        ));
     }
 }
